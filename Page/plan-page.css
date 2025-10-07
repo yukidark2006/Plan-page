@@ -1,0 +1,96 @@
+body {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+  padding: 30px; }
+body > * {
+  padding: 10px;
+  flex: 1 100%; }
+.header {
+  background: tomato;
+}
+
+.main-article {
+  text-align: left;
+  background:deepskyblue;
+}
+.aside-1 {
+  background: gold;
+}
+.aside-2 {
+  background: hotpink; }
+.footer {
+  background: lightgreen;
+}
+
+@media all and (min-width: 800px) {
+  .main-article { flex: 3 0; }
+  .aside-1 { order: 1; }
+  .main-article { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0; }
+}
+
+
+
+
+
+
+body {
+  font-family: Lato, sans-serif;
+  background: url(plan-page.jpg);
+  font-size: 16px;
+  width: 1180px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+article {
+  background: #262626;
+  display: inline-block;
+  margin: 80px 20px 0 20px;
+  border: 5px solid #424242;
+  color: #a1a1a1;
+}
+
+article h1 {
+  font-size: 1.5em;
+  color: #FFF;
+}
+
+p.price {
+  font-size: 3em;
+  font-weight: bold;
+  color: #27dcc4;
+}
+
+ul {
+  padding: 0;
+}
+
+button {
+  background: #27dcc4;
+  color: #FFF;
+  padding: 15px 30px;
+  margin: 10px 0;
+  font-size: 0.9em;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background: #ACACAC;
+}
+
+li {
+  list-style-type: none;
+  padding: 5px 0;
+}
